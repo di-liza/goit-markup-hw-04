@@ -166,17 +166,31 @@ img {
 
 /* Герой */
 .hero {
-  background-color: var(--accent-background-color);
-  text-align: center;
   width: auto;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-}
 
+  text-align: center;
+}
+.overlay {
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 600px;
+  max-width: 1600px;
+  background-color: var(--accent-background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/fone-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
 .hero-title {
   max-width: 696px;
   margin: auto;
   margin-bottom: 30px;
+
   color: var(--primary-white-color);
   font-size: 44px;
   line-height: 1.36;
