@@ -23,21 +23,25 @@
   <body>
     <header class="header">
       <div class="container header-nav">
-        <nav class="header-nav-pages">
+        <nav class="header-nav">
           <a class="logo link" href="./index.html"> <span class="logo-el">Web</span>Studio </a>
 
-          <ul class="header-nav-items list">
-            <li class="item"><a class="link current" href="./index.html">Студія</a></li>
-            <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
+          <ul class="header-nav-list list">
+            <li class="header-nav-list-item">
+              <a class="link current" href="./index.html">Студія</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-nav-list-item"><a class="link" href="">Контакти</a></li>
           </ul>
         </nav>
 
-        <ul class="header-contact-items list">
-          <li class="item">
+        <ul class="header-contact-list list">
+          <li class="header-contact-list-item">
             <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="item">
+          <li class="header-contact-list-item">
             <a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -45,34 +49,34 @@
     </header>
     <main>
       <section class="hero section overlay">
-        <div class="container overlay">
+        <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button primary" type="button">Замовити послугу</button>
+          <button class="button hero-btn" type="button">Замовити послугу</button>
         </div>
       </section>
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="features-items list">
-            <li class="item">
+          <ul class="features-list list">
+            <li class="features-list-item icon-antenna">
               <h3 class="features-subtitle">Увага до деталей</h3>
               <p class="features-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="item">
+            <li class="features-list-item icon-clock">
               <h3 class="features-subtitle">Пунктуальність</h3>
               <p class="features-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="item">
+            <li class="features-list-item icon-diagram">
               <h3 class="features-subtitle">Планування</h3>
               <p class="features-text">
                 Так само консултація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item">
+            <li class="features-list-item icon-astronaut">
               <h3 class="features-subtitle">Сучасні технології</h3>
               <p class="features-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -84,11 +88,11 @@
       <section class="tasks section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul class="tasks-items list">
-            <li class="item">
+          <ul class="tasks-list list">
+            <li class="tasks-list-item">
               <img src="./images/img-1.jpg" alt="процес набору коду" width="370" height="294" />
             </li>
-            <li class="item">
+            <li class="tasks-list-item">
               <img
                 src="./images/img-2.jpg"
                 alt="процес створення мобільного застосунку"
@@ -96,7 +100,7 @@
                 height="294"
               />
             </li>
-            <li class="item">
+            <li class="tasks-list-item">
               <img src="./images/img-3.jpg" alt="палітра кольорів" width="370" height="294" />
             </li>
           </ul>
@@ -105,8 +109,8 @@
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team-items list">
-            <li class="item">
+          <ul class="team-list list">
+            <li class="team-list-item">
               <img
                 src="./images/member-1.jpg"
                 alt="молодий бородатий хлопець в окулярах, посміхається"
@@ -116,7 +120,7 @@
               <h3 class="team-subtitle">Ігор Дем'яненко</h3>
               <p class="team-dscr">Product Designer</p>
             </li>
-            <li class="item">
+            <li class="team-list-item">
               <img
                 src="./images/member-2.jpg"
                 alt="молода білява дівчина в окулярах, посміхається"
@@ -126,7 +130,7 @@
               <h3 class="team-subtitle">Ольга Рєпіна</h3>
               <p class="team-dscr">Frontend Developer</p>
             </li>
-            <li class="item">
+            <li class="team-list-item">
               <img
                 src="./images/member-3.jpg"
                 alt="молодий хлопець із русим волоссям та карими очима, посміхається"
@@ -136,7 +140,7 @@
               <h3 class="team-subtitle">Микола Тарасов</h3>
               <p class="team-dscr">Marketing</p>
             </li>
-            <li class="item">
+            <li class="team-list-item">
               <img
                 src="./images/member-4.jpg"
                 alt="молодий бородатий хлопець в окулярах, посміхається"

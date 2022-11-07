@@ -101,24 +101,20 @@ img {
 /*Навігація*/
 .header-nav {
   display: flex;
-}
-
-.header-nav-pages {
-  display: flex;
   align-items: center;
 }
 
-.header-nav-items {
+.header-nav-list {
   font-weight: 500;
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 93px;
 }
-.header-nav-items .item + .item {
+.header-nav-list-item + .header-nav-list-item {
   margin-left: 50px;
 }
-.header-nav-items .link {
+.header-nav-list .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -128,25 +124,22 @@ img {
   font-size: 14px;
   line-height: 1.17;
 }
-.header-nav-items .link:hover,
-.header-nav-items .link:focus {
+.header-nav-list .link:hover,
+.header-nav-list .link:focus {
   color: var(--accent-color);
 }
-.header-contact-items {
+.header-contact-list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.header-contact-items .item {
-  display: flex;
-  align-items: center;
-}
-.header-contact-items .item + .item {
+
+.header-contact-list-item + .header-contact-list-item {
   margin-left: 50px;
 }
 
 /* Виділення поточної сторінки кольором*/
-.header-nav-items .link.current {
+.header-nav-list .link.current {
   color: var(--accent-color);
 }
 /* Виділення і псевдостани посилань на сторінки*/
@@ -205,7 +198,7 @@ img {
   display: flex;
   justify-content: center;
 }
-.button.primary {
+.hero-btn {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 216px;
@@ -233,7 +226,7 @@ img {
   width: auto;
   padding-bottom: 0;
 }
-.features-items {
+.features-list {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -243,12 +236,32 @@ img {
   padding: 0;
   margin-right: calc(-1 + var(--card-set-gap-margin));
 }
-.features-items > .item {
+.features-list-item {
   width: 270px;
   flex-basis: calc(100% / 3 var(--card-set-gap-margin));
   margin-right: var(--card-set-gap-margin);
 }
-
+.features-list-item::before {
+  margin-bottom: 30px;
+  display: block;
+  height: 120px;
+  content: '';
+  background-color: var(--second-accent-background-color);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
 .features-subtitle {
   margin-bottom: 10px;
 
@@ -267,7 +280,7 @@ img {
 .tasks {
   width: auto;
 }
-.tasks-items {
+.tasks-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -276,7 +289,7 @@ img {
   padding: 0;
   margin-right: calc(-1 + var(--card-set-gap-margin));
 }
-.tasks-items > .item {
+.tasks-list-item {
   flex-basis: calc(100% / 3 var(--card-set-gap-margin));
   margin-right: var(--card-set-gap-margin);
 }
@@ -286,7 +299,7 @@ img {
   background-color: var(--second-accent-background-color);
   width: auto;
 }
-.team-items {
+.team-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -295,10 +308,10 @@ img {
   padding: 0;
   margin-right: calc(-1 + var(--card-set-gap-margin));
 }
-.team-items img {
+.team-list img {
   margin-bottom: 30px;
 }
-.team-items > .item {
+.team-list-item {
   flex-basis: calc(100% / 4 var(--card-set-gap-margin));
   margin-right: var(--card-set-gap-margin);
   padding-top: 0;
@@ -329,14 +342,14 @@ img {
 /* --------ПОРТФОЛІО---------- */
 /* Кнопки*/
 
-.filter-item {
+.porfolio-filter-list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.button.secondary {
+.porfolio-btn {
   display: block;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -349,17 +362,17 @@ img {
   font-weight: 500;
   background-color: var(--second-accent-background-color);
 }
-.filter-item .main {
+.porfolio-filter-list .main {
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.filter-item .item + .item {
+.filter-list-item + .filter-list-item {
   margin-left: 8px;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.porfolio-btn:hover,
+.porfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -416,6 +429,8 @@ img {
 }
 
 .logo-second-el {
+  padding-top: 60px;
+  padding-bottom: 60px;
   color: var(--primary-white-color);
 }
 
