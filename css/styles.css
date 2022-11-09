@@ -524,7 +524,6 @@ img {
 }
 .footer-cont {
   display: flex;
-  align-items: baseline;
 }
 .address-cont {
   margin-right: 70px;
